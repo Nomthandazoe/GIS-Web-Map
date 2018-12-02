@@ -2,14 +2,16 @@
 The web map was created using leaflet to host both vector and raster data. It also allows geoprocessing such as measure, buffer creation for layers and intersections. The application was created using JavaScript.
 
 Dataset used to create the application
-1. PTA Shapefiles
+1. PTA Shapefiles:
 The vector data for Pretoria was downloaded from Openstreet maps as an osm file .
 The osm file was converted to shapefiles using   QGIS.
 The shapefiles extracted from the osm file were points, polygons, lines and multilines.
-2. PTA Geotiff Images
+2. PTA Geotiff Images:
 The Geotiff images were downloaded from the link given and georeferenced using Global Mapper. 
 The Geotiff files were converted to jpg, extracted the bounds and added to the map.
-3. Openstreet basemap
+3. Openstreet basemap:
 The basemap was added using the link "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 4. ArcGIS Imagery basemap
 
+Set up for running the application on a local disk
+The application was created using Geoserver, PostGIS, Postegresql, PgAdmin 4 and QGIS.

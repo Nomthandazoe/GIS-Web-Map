@@ -14,4 +14,5 @@ The basemap was added using the link "http://{s}.tile.openstreetmap.org/{z}/{x}/
 4. ArcGIS Imagery basemap
 
 Set up for running the application on a local disk
+
 The application was created using Geoserver, PostGIS, Postegresql, PgAdmin 4 and QGIS.

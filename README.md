@@ -41,6 +41,12 @@ Geoprocessing
 * The map has a measure tool on the top right corner which measures distances areas for polygons. The distance is measures in meters and also converted to kilometers, the area is measured in square kilometers and hectares.
 * A buffer can be created for the shapefiles. The buffer has been created for points and lines on the map. 
 * Creating a buffer for other layers: 
+        // layer: is the layer to be buffered
+        // 0.05 size of the buffer in kilometers
+        var json_layer_buffer = turf.buffer(layer.toGeoJSON(), 0.05, {units: 'kilometers'}); 
+        // creating buffer, choosing style, color and add to map
+        var layer_buffer = L.geoJson(json_layer_buffer, {style:{color: 'yellow',
+        dashArray: '5,5', fillOpacity: 0}}).addTo(map);
 
 Libraries used
 * Turf.js

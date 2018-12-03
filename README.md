@@ -24,7 +24,7 @@ Set up for running the application on a local disk
 2. Running the application on a local disk
 * The application contains css files and js files which were created with the index html file and are recquired to run the application on any local disk. 
 * The files can be downloaded as a zip file from the repository
-* Create a folder and extract the project whole to the folder.
+* Create a folder and extract all the files to the folder.
 * Then open the index file on a web browser.
 * The application needs internet connection to run.
 

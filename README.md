@@ -28,7 +28,7 @@ Running the application on a local disk
 * The application needs internet connection to run.
 
 How to use the application
-* To open the application, open the index.html file with browser of choice.
+* To open the application, open the index.html file with chrome or firefox browser, in internet explorer some of the features are not supported.
 
 Libraries used
 * Turf.js

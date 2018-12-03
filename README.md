@@ -29,6 +29,16 @@ Running the application on a local disk
 
 How to use the application
 * To open the application, open the index.html file with chrome or firefox browser, in internet explorer some of the features are not supported.
+* The layers (Pretoria shapefiles and Geotiff images) are visible on the initial view of the map.
+* The layers can be switched off using the layers icon on the right.
+* The map has two basemaps Openstreet and ArcGIS Imagery and can be switched.
+* Map has a zoom function including the home zoom.
+* The scale which is at the bottom of the map changes as you zoom in or out
+* The geolocator tool on the left shows the location of the user when clicked on it.
+* The sidebar on the left has the functionality to upload shapefiles. The functinality uploads shapefiles that are zipped.
+
+Geoprocessing
+* The map has a measure tool on the top right corner which measures distances areas for polygons. The distance is measures in meters and also converted to kilometers, the area is measured in square kilometers and hectares.
 
 Libraries used
 * Turf.js

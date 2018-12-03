@@ -13,15 +13,14 @@ The Geotiff files were converted to jpg, extracted the bounds and added to the m
 The basemap was added using the link "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 4. ArcGIS Imagery basemap
 
-Set up for running the application on a local disk
-
-1. Softwares used to create the application
+Softwares used to create the application
 * The application was created using Geoserver, PostGIS, Postegresql, PgAdmin 4 and QGIS.
 * Postgresql 10.5 was downloaded from the postgresql website. PgAdmin 4 and PostGIS with the PostGIS shapefile loader were installed on postgresql. 
 * A database for the application was created on PgAdmin 4 using postgresql server to load the shapefiles. PostGIS extensions were added to the database. 
 * PTA shapefiles were then loaded to the database using PostGIS shapefile loader. Geoserver was used to create the tile map layer and publish the layers from PostGIS. The layers were then displayed on QGIS by connecting to PostGIS and loaded the shapefiles.
 * Qgis2web plugin from QGIS was used to import the layers from QGIS to display them on the web using leaflet.
-2. Running the application on a local disk
+
+Running the application on a local disk
 * The application contains css files and js files which were created with the index html file and are recquired to run the application on any local disk. 
 * The files can be downloaded as a zip file from the repository
 * Create a folder and extract all the files to the folder.

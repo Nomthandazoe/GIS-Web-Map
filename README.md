@@ -39,6 +39,8 @@ How to use the application
 
 Geoprocessing
 * The map has a measure tool on the top right corner which measures distances areas for polygons. The distance is measures in meters and also converted to kilometers, the area is measured in square kilometers and hectares.
+* A buffer can be created for the shapefiles. The buffer has been created for points and lines on the map. 
+* Creating a buffer for other layers: 
 
 Libraries used
 * Turf.js

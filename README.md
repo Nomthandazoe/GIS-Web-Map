@@ -28,6 +28,8 @@ Set up for running the application on a local disk
 * Then open the index file on a web browser.
 * The application needs internet connection to run.
 
+How to use the application
+** ndinfk
 Libraries used
 * Turf.js
 Turf is a JavaScript library for spatial analysis.  Turf is an open source project maintained by Mapbox that allows for performing spatial operations in the browser. Turf helps to analyze, aggregate, and transform data in order to visualize it in new ways and answer advanced questions. There are many functions that can be done using turf and this project turf was used to create a buffer and do an intersection. Turf can be added to the webpage by defining it using the url "<script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>" in the head of the html document.

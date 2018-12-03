@@ -23,8 +23,9 @@ Set up for running the application on a local disk
 * Qgis2web plugin from QGIS was used to import the layers from QGIS to display them on the web using leaflet.
 2. Running the application on a local disk
 * The application contains css files and js files which were created with the index html file and are recquired to run the application on any local disk. 
-* The files can be downloaded as a zip file from the repository and should be extracted from the zip in order to run the index.
-* Then open the index file to run the application.
+* The files can be downloaded as a zip file from the repository
+* Create a folder and extract the project whole to the folder.
+* Then open the index file on a web browser.
 * The application needs internet connection to run.
 
 

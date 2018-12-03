@@ -30,9 +30,10 @@ Set up for running the application on a local disk
 
 Libraries used
 * Turf.js
-- Turf is a JavaScript library for spatial analysis. It includes traditional spatial operations, helper functions for creating GeoJSON data, and data classification and statistics tools. 
+Turf is a JavaScript library for spatial analysis. 
 
-
+License information
+* MIT License - Open source license
 
 
 

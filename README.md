@@ -57,7 +57,6 @@ Geoprocessing
 
 Limitations and Areas for improvement
 * The application does not add Geotiff files directly, they should be converted to png or jpg images.
-* A legend can be added on the map
 * Implementing the functionality to export shapefiles
 * Add other geoprocessing tools such as union 
 

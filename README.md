@@ -5,7 +5,7 @@ Dataset used to create the application
 1. PTA Shapefiles:
 The vector data for Pretoria was downloaded from Openstreet maps as an osm file .
 The osm file was converted to shapefiles using   QGIS.
-The shapefiles extracted from the osm file were points, polygons, lines and multilines.
+The shapefiles extracted from the osm file were points (nodes), polygons (buildings), lines (roads) and multilines (roads, pathways and railway lines).
 2. PTA Geotiff Images:
 The Geotiff images were downloaded from the link given and georeferenced using Global Mapper. 
 The Geotiff files were converted to jpg, extracted the bounds and added to the map.
@@ -40,6 +40,8 @@ How to use the application
 Geoprocessing
 * The map has a measure tool on the top right corner which measures distances areas for polygons. The distance is measures in meters and also converted to kilometers, the area is measured in square kilometers and hectares.
 * A buffer can be created for the shapefiles. The buffer has been created for points and lines on the map. 
+* The blue circles on the map show the 50 m buffer for the layer points.
+* The yellow lines represent the 50 m buffer for the layer lines. 
 * Creating a buffer for other layers: 
 *        // layer: is the layer to be buffered
 *        // 0.05 size of the buffer in kilometers
@@ -47,12 +49,15 @@ Geoprocessing
 *        // creating buffer, choosing style, color and add to map
 *        var layer_buffer = L.geoJson(json_layer_buffer, {style:{color: 'yellow',
 *        dashArray: '5,5', fillOpacity: 0}}).addTo(map);
+* The blue icons represent the intersection where the lines and multilines share a common point or where they intersect.
+* Intersection for lines: var intersection = turf.lineIntersect(layer1.toGeoJSON(), layer2.toGeoJSON()).addTo(map);
+* Intersection for polygons: var intersection = turf.polygonIntersect(layer1.toGeoJSON(), layer2.toGeoJSON()).addTo(map);
 
 Limitations and Areas for improvement
 * The application does not add Geotiff files directly
 * A legend can be added on the map
 * Implementing the functionality to export shapefiles
-* Add other geoprocessing tools such as union and intersection
+* Add other geoprocessing tools such as union 
 
 Libraries used
 * Turf.js

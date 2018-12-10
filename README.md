@@ -35,7 +35,9 @@ How to use the application
 * Map has a zoom function including the home zoom.
 * The scale which is at the bottom of the map changes as you zoom in or out
 * The geolocator tool on the left shows the location of the user when clicked on it.
-* The sidebar on the left has the functionality to upload shapefiles. The functinality uploads shapefiles that are zipped.
+* The sidebar on the left has the functionality to upload shapefiles. The functinality uploads shapefiles that are zipped., 
+* To show legend, click on the show legend button.
+* To close the sidebar, click on the tab button twice.
 
 Geoprocessing
 * The map has a measure tool on the top right corner which measures distances areas for polygons. The distance is measures in meters and also converted to kilometers, the area is measured in square kilometers and hectares.
@@ -44,24 +46,25 @@ Geoprocessing
 * The yellow lines represent the 50 m buffer for the layer lines. 
 * Creating a buffer for other layers:
 * Install visual studio code, open it after installation and install javascript tool support.
-* Open the index.html file using visual studio code and copy the code below and paste it at 
+* Open the index.html file using visual studio code and copy the code below and paste it at the bottom of the file before </script> 
 *        // layer: is the layer to be buffered
 *        // 0.05 size of the buffer in kilometers
 *        var json_layer_buffer = turf.buffer(layer.toGeoJSON(), 0.05, {units: 'kilometers'}); 
 *        // creating buffer, choosing style, color and add to map
 *        var layer_buffer = L.geoJson(json_layer_buffer, {style:{color: 'yellow',
 *        dashArray: '5,5', fillOpacity: 0}}).addTo(map);
-* The blue icons represent the intersection where the lines and multilines share a common point or where they intersect.
+* The pin points represent the intersection where the lines and multilines share a common point or where they intersect.
 * Intersection for lines: 
+* Add the below code to index.html in visual stuido code
 * var intersection = turf.lineIntersect(layer1.toGeoJSON(), layer2.toGeoJSON()).addTo(map);
 * Intersection for polygons: 
 * var intersection = turf.polygonIntersect(layer1.toGeoJSON(), layer2.toGeoJSON()).addTo(map);
 
 Limitations and Areas for improvement
-* The application does not add Geotiff files directly, they should be converted to png or jpg images.
+* The application does not add Geotiff files directly, they should be converted to png or jpg images and specify the bounds when adding.
 * Implementing the functionality to export shapefiles
 * Add other geoprocessing tools such as union 
-
+ them to the map.
 Libraries used
 * Turf.js
 Turf is a JavaScript library for spatial analysis.  Turf is an open source project maintained by Mapbox that allows for performing spatial operations in the browser. Turf helps to analyze, aggregate, and transform data in order to visualize it in new ways and answer advanced questions. There are many functions that can be done using turf and this project turf was used to create a buffer and do an intersection. Turf can be added to the webpage by defining it using the url "<script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>" in the head of the html document.

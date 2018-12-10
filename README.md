@@ -72,5 +72,8 @@ Turf is a JavaScript library for spatial analysis.  Turf is an open source proje
 ### License information
 * MIT License - Open source license
 
+### References
+* Leaflet plugins and tutorials - https://leafletjs.com/
+
 
 

@@ -53,6 +53,7 @@ The basemap was added using the link "http://{s}.tile.openstreetmap.org/{z}/{x}/
 *        // creating buffer, choosing style, color and add to map
 *        var layer_buffer = L.geoJson(json_layer_buffer, {style:{color: 'yellow',
 *        dashArray: '5,5', fillOpacity: 0}}).addTo(map);
+* Buffers created for points and lines are visible on initial view of the map and can be switched off from the layers list.
 * Intersecting lines and multilines: 
 * Add the below code to index.html in visual studio code
 *        var intersection = turf.lineIntersect(layer_lines_3.toGeoJSON(), layer_multilines_2.toGeoJSON());.addTo(map);

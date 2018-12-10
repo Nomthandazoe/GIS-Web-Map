@@ -1,4 +1,4 @@
-# GIS-Web-Map
+## GIS-Web-Map
 The web map was created using leaflet and javascript to host both vector and raster data. It also allows geoprocessing such as measure, buffer creation for layers and intersections.
 
 ### Dataset used to create the application

@@ -1,10 +1,10 @@
 # GIS-Web-Map
-The web map was created using leaflet to host both vector and raster data. It also allows geoprocessing such as measure, buffer creation for layers and intersections. The application was created using JavaScript.
+The web map was created using leaflet and javascript to host both vector and raster data. It also allows geoprocessing such as measure, buffer creation for layers and intersections.
 
 Dataset used to create the application
 1. PTA Shapefiles:
 The vector data for Pretoria was downloaded from Openstreet maps as an osm file .
-The osm file was converted to shapefiles using   QGIS.
+The osm file was converted to shapefiles using QGIS.
 The shapefiles extracted from the osm file were points (nodes), polygons (buildings), lines (roads) and multilines (roads, pathways and railway lines).
 2. PTA Geotiff Images:
 The Geotiff images were downloaded from the link given and georeferenced using Global Mapper. 
@@ -15,7 +15,7 @@ The basemap was added using the link "http://{s}.tile.openstreetmap.org/{z}/{x}/
 
 Softwares used to create the application
 * The application was created using Geoserver, PostGIS, Postegresql, PgAdmin 4 and QGIS.
-* Postgresql 10.5 was downloaded from the postgresql website. PgAdmin 4 and PostGIS with the PostGIS shapefile loader were installed on postgresql. 
+* Postgresql 10.5 was downloaded from the postgresql website which automatically installs PgAdmin 4 and PostGIS 2.5 with the PostGIS shapefile loader were installed on postgresql server using the application stack builder. 
 * A database for the application was created on PgAdmin 4 using postgresql server to load the shapefiles. PostGIS extensions were added to the database. 
 * PTA shapefiles were then loaded to the database using PostGIS shapefile loader. Geoserver was used to create the tile map layer and publish the layers from PostGIS. The layers were then displayed on QGIS by connecting to PostGIS and loaded the shapefiles.
 * Qgis2web plugin from QGIS was used to import the layers from QGIS to display them on the web using leaflet.
@@ -42,7 +42,9 @@ Geoprocessing
 * A buffer can be created for the shapefiles. The buffer has been created for points and lines on the map. 
 * The blue circles on the map show the 50 m buffer for the layer points.
 * The yellow lines represent the 50 m buffer for the layer lines. 
-* Creating a buffer for other layers: 
+* Creating a buffer for other layers:
+* Install visual studio code, open it after installation and install javascript tool support.
+* Open the index.html file using visual studio code and copy the code below and paste it at 
 *        // layer: is the layer to be buffered
 *        // 0.05 size of the buffer in kilometers
 *        var json_layer_buffer = turf.buffer(layer.toGeoJSON(), 0.05, {units: 'kilometers'}); 

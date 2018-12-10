@@ -56,9 +56,9 @@ Geoprocessing
 * The pin points represent the intersection where the lines and multilines share a common point or where they intersect.
 * Intersection for lines: 
 * Add the below code to index.html in visual stuido code
-* var intersection = turf.lineIntersect(layer1.toGeoJSON(), layer2.toGeoJSON()).addTo(map);
+*        var intersection = turf.lineIntersect(layer1.toGeoJSON(), layer2.toGeoJSON()).addTo(map);
 * Intersection for polygons: 
-* var intersection = turf.polygonIntersect(layer1.toGeoJSON(), layer2.toGeoJSON()).addTo(map);
+*        var intersection = turf.polygonIntersect(layer1.toGeoJSON(), layer2.toGeoJSON()).addTo(map);
 
 Limitations and Areas for improvement
 * The application does not add Geotiff files directly, they should be converted to png or jpg images and specify the bounds when adding.

@@ -13,21 +13,21 @@ The Geotiff files were converted to jpg, extracted the bounds and added to the m
 The basemap was added using the link "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 4. ArcGIS Imagery basemap
 
-Softwares used to create the application
+#Softwares used to create the application
 * The application was created using Geoserver, PostGIS, Postegresql, PgAdmin 4 and QGIS.
 * Postgresql 10.5 was downloaded from the postgresql website which automatically installs PgAdmin 4 and PostGIS 2.5 with the PostGIS shapefile loader were installed on postgresql server using the application stack builder. 
 * A database for the application was created on PgAdmin 4 using postgresql server to load the shapefiles. PostGIS extensions were added to the database. 
 * PTA shapefiles were then loaded to the database using PostGIS shapefile loader. Geoserver was used to create the tile map layer and publish the layers from PostGIS. The layers were then displayed on QGIS by connecting to PostGIS and loaded the shapefiles.
 * Qgis2web plugin from QGIS was used to import the layers from QGIS to display them on the web using leaflet.
 
-Running the application on a local disk
+#Running the application on a local disk
 * The application contains css files and js files which were created with the index html file and are recquired to run the application on any local disk. 
 * The files can be downloaded as a zip file from the repository
 * Create a folder and extract all the files to the folder.
 * Then open the index file on a web browser.
 * The application needs internet connection to run.
 
-How to use the application
+#How to use the application
 * To open the application, open the index.html file with chrome or firefox browser, in internet explorer some of the features are not supported.
 * The layers (Pretoria shapefiles and Geotiff images) are visible on the initial view of the map.
 * The layers can be switched off using the layers icon on the right.
@@ -39,7 +39,7 @@ How to use the application
 * To show legend, click on the show legend button.
 * To close the sidebar, click on the tab button twice.
 
-Geoprocessing
+#Geoprocessing
 * The map has a measure tool on the top right corner which measures distances areas for polygons. The distance is measures in meters and also converted to kilometers, the area is measured in square kilometers and hectares.
 * A buffer can be created for the shapefiles. The buffer has been created for points and lines on the map. 
 * The blue circles on the map show the 50 m buffer for the layer points.
@@ -60,7 +60,7 @@ Geoprocessing
 * Intersection for polygons: 
 *        var intersection = turf.polygonIntersect(layer1.toGeoJSON(), layer2.toGeoJSON()).addTo(map);
 
-Limitations and Areas for improvement
+#Limitations and Areas for improvement
 * The application does not add Geotiff files directly, they should be converted to png or jpg images and specify the bounds when adding.
 * Implementing the functionality to export shapefiles
 * Add other geoprocessing tools such as union 
@@ -69,7 +69,7 @@ Libraries used
 * Turf.js
 Turf is a JavaScript library for spatial analysis.  Turf is an open source project maintained by Mapbox that allows for performing spatial operations in the browser. Turf helps to analyze, aggregate, and transform data in order to visualize it in new ways and answer advanced questions. There are many functions that can be done using turf and this project turf was used to create a buffer and do an intersection. Turf can be added to the webpage by defining it using the url "<script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>" in the head of the html document.
 
-License information
+#License information
 * MIT License - Open source license
 
 

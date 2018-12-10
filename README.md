@@ -53,11 +53,11 @@ The basemap was added using the link "http://{s}.tile.openstreetmap.org/{z}/{x}/
 *        // creating buffer, choosing style, color and add to map
 *        var layer_buffer = L.geoJson(json_layer_buffer, {style:{color: 'yellow',
 *        dashArray: '5,5', fillOpacity: 0}}).addTo(map);
-* The pin points represent the intersection where the lines and multilines share a common point or where they intersect.
-* Intersection for lines: 
-* Add the below code to index.html in visual stuido code
-*        var intersection = turf.lineIntersect(layer1.toGeoJSON(), layer2.toGeoJSON()).addTo(map);
-* Intersection for polygons: 
+* Intersecting lines and multilines: 
+* Add the below code to index.html in visual studio code
+*        var intersection = turf.lineIntersect(layer_lines_3.toGeoJSON(), layer_multilines_2.toGeoJSON());.addTo(map);
+* For intersecting polygons: 
+* The web map has a single shapefile for polygons therefore an intersecting polygons is not possible for my dataset.
 *        var intersection = turf.polygonIntersect(layer1.toGeoJSON(), layer2.toGeoJSON()).addTo(map);
 
 ### Limitations and Areas for improvement

@@ -8,7 +8,7 @@ The osm file was converted to shapefiles using QGIS.
 The shapefiles extracted from the osm file were points (nodes), polygons (buildings), lines (roads) and multilines (roads, pathways and railway lines).
 2. PTA Geotiff Images:
 The Geotiff images were downloaded from the link given and georeferenced using Global Mapper. 
-The Geotiff files were converted to jpg, extracted the bounds and added to the map.
+The Geotiff files were converted to png, extracted the bounds and added to the map.
 3. Openstreet basemap:
 The basemap was added using the link "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 4. ArcGIS Imagery basemap
@@ -65,7 +65,9 @@ The basemap was added using the link "http://{s}.tile.openstreetmap.org/{z}/{x}/
 * The application does not add Geotiff files directly, they should be converted to png or jpg images and specify the bounds when adding.
 * Implementing the functionality to export shapefiles
 * Add other geoprocessing tools such as union to the map.
-Libraries used
+* Geotiff images were converted to png format and added to the map, but they could not be uploaded on github together with other files because their size exceeds 25 mb. Github does not take images with a size that exceeds 25 mb.
+
+### Libraries used
 * Turf.js
 Turf is a JavaScript library for spatial analysis.  Turf is an open source project maintained by Mapbox that allows for performing spatial operations in the browser. Turf helps to analyze, aggregate, and transform data in order to visualize it in new ways and answer advanced questions. There are many functions that can be done using turf and this project turf was used to create a buffer and do an intersection. Turf can be added to the webpage by defining it using the url "<script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>" in the head of the html document.
 
